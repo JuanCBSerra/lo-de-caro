@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería "Lo de Caro"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="Logotipo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div style="display: flex">
-            <img src="Logotipo.ico" alt="Logotipo" height="100px">
-            <h1>Pastelería "Lo de Caro"</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logotipo.ico" alt="Logotipo" height="30">
+                Pastelería "Lo de Caro"
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mision-vision-valores">Misión, Visión y Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios Ofrecidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#propuesta-comercial">Propuesta Comercial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <a href="#mision-vision-valores">Misión, Visión y Valores</a> |
-        <a href="#servicios">Servicios Ofrecidos</a> |
-        <a href="#propuesta-comercial">Propuesta Comercial</a> |
-        <a href="#contacto">Contacto</a>
     </nav>
     
-    <section id="mision-vision-valores">
+    <section id="mision-vision-valores" class="container">
         <h2>Misión, Visión y Valores</h2>
         <p><strong>Misión:</strong> En Lo de Caro nos comprometemos a ofrecer a nuestros clientes productos de alta calidad, elaborados con ingredientes frescos y naturales, satisfaciendo así sus deseos de dulzura y deleite.</p>
         <p><strong>Visión:</strong> Ser reconocidos como la mejor pastelería de la región, destacando por nuestra excelencia en sabor, presentación y servicio al cliente.</p>
@@ -32,7 +49,7 @@
         </ul>
     </section>
     
-    <section id="servicios">
+    <section id="servicios" class="container">
         <h2>Servicios Ofrecidos</h2>
         <ol>
             <li><strong>Tortas y Pasteles Personalizados:</strong> Diseñamos y elaboramos tortas y pasteles para todo tipo de celebraciones, desde cumpleaños hasta bodas.</li>
@@ -43,12 +60,12 @@
         </ol>
     </section>
     
-    <section id="propuesta-comercial">
+    <section id="propuesta-comercial" class="container">
         <h2>Propuesta Comercial</h2>
         <p>En Pastelería Lo de Caro, nos comprometemos a brindarte productos de la más alta calidad, elaborados con pasión y creatividad. Nuestra prioridad es satisfacer tus deseos dulces y hacer de cada momento una experiencia inolvidable. ¡Déjanos endulzar tu vida!</p>
     </section>
     
-    <section id="contacto">
+    <section id="contacto" class="container">
         <h2>Información de Contacto</h2>
         <p><strong>Dirección:</strong> Calle Principal #123, Ciudad Autónoma de Buenos Aires, Argentina</p>
         <p><strong>Teléfono:</strong> +123456789</p>
@@ -56,8 +73,12 @@
         <p><strong>Horario de Atención:</strong> Lunes a Sábado de 9:00 am a 5:00 pm</p>
     </section>
     
-    <footer>
+    <footer class="container">
         <p>&copy; 2024 Pastelería Lo de Caro. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
