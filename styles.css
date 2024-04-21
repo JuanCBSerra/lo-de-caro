@@ -1,75 +1,118 @@
-/* Estilos adicionales personalizados */
-
-/* Estilos para la sección Misión, Visión y Valores */
-#mision-vision-valores {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-bottom: 1px solid #ddd;
+* {
+    margin: 0;
+    padding: 0;
+    color: #9A44A2;
 }
 
-#mision-vision-valores h2 {
-    color: #333;
+body {
+    background-color: #F9EFF9;
+    background-image: linear-gradient(to top, #F5F5F5, #F9EFF9);
 }
 
-#mision-vision-valores p {
-    color: #666;
+.page-content {
+    padding: 20px;
 }
 
-/* Estilos para la sección Servicios Ofrecidos */
-#servicios {
-    padding: 30px;
-    background-color: #e9ecef;
+
+.navbar {
+    background-color: #F9EFF9;
+    
 }
 
-#servicios h2 {
-    color: #333;
+.text {
+    color: #9A44A2;
 }
 
-#servicios ol, #servicios ul {
-    padding-left: 20px;
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif; /* Utiliza la fuente Roboto */
+    font-weight: 500; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-size: 1.5rem; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
 }
 
-#servicios ol li, #servicios ul li {
-    color: #666;
+.img-nuestras-tortas {
+    min-width: 33.33vw;
+    max-width: 50vw;
+    height: 200px; /* Tamaño fijo deseado */
+    overflow: hidden; /* Para recortar las imágenes si son más grandes que el contenedor */
 }
 
-/* Estilos para la sección Propuesta Comercial */
-#propuesta-comercial {
-    padding: 30px;
-    background-color: #f8f9fa;
+.img-nuestras-tortas img {
+    transition: transform 1s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se ajuste al contenedor manteniendo su relación de aspecto */
 }
 
-#propuesta-comercial h2 {
-    color: #333;
+.img-nuestras-tortas:hover img {
+    transform: scale(1.05);
 }
 
-#propuesta-comercial p {
-    color: #666;
+#sobre-nosotros-content {
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
-/* Estilos para la sección Información de Contacto */
-#contacto {
-    padding: 30px;
-    background-color: #e9ecef;
+#pastry-chef {
+    min-width: 300px;
 }
 
-#contacto h2 {
-    color: #333;
+#pastry-chef img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#contacto p {
-    color: #666;
+.img-overlay p {
+    margin-bottom: 0;
 }
 
-/* Estilos para el footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+.img-overlay {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    padding: 5px;
+    opacity: 0;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 2s ease;
+    transition: opacity 1s ease;
+    box-sizing: border-box; /* Asegura que el padding no incremente el tamaño del div */
 }
 
-/* Estilos adicionales */
-section p strong {
-    color: #333;
+.img-container:hover .img-overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambia la opacidad del fondo al hacer hover */
+    opacity: 1;
+}
+
+.col {
+    position: relative;
+}
+
+
+#pasos-pedido {
+    align-items: center;
+    margin-left: 10%;
+    width: 80vw;
+}
+
+.list-group-item {
+    color: #9A44A2;
+}
+
+.step-text {
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.paso-pedido {
+    background-color: #F9EFF9;
+    display: flex;
+    width: 80vw;
+}
+
+.card-contacto {
+    background-color: #F9EFF9;
 }
